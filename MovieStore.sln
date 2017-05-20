@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieStore.Domain", "MovieStore.Domain\MovieStore.Domain.csproj", "{9232F5E4-DDDE-4152-854C-5914C380497A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieStore.WebUI", "MovieStore.WebUI\MovieStore.WebUI.csproj", "{7F88F0A8-4771-468E-A9E6-DC1AC7D36802}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9232F5E4-DDDE-4152-854C-5914C380497A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9232F5E4-DDDE-4152-854C-5914C380497A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9232F5E4-DDDE-4152-854C-5914C380497A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9232F5E4-DDDE-4152-854C-5914C380497A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F88F0A8-4771-468E-A9E6-DC1AC7D36802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F88F0A8-4771-468E-A9E6-DC1AC7D36802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F88F0A8-4771-468E-A9E6-DC1AC7D36802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F88F0A8-4771-468E-A9E6-DC1AC7D36802}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

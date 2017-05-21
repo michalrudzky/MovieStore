@@ -16,3 +16,8 @@ C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.Dom
 C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.Domain\obj\Debug\MovieStore.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.Domain\obj\Debug\MovieStore.Domain.dll
 C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.Domain\obj\Debug\MovieStore.Domain.pdb
+C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.Domain\bin\Debug\MovieStore.Domain.dll.config
+C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.Domain\bin\Debug\EntityFramework.SqlServer.xml

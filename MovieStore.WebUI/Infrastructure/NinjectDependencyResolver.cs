@@ -5,6 +5,7 @@ using System.Web.Mvc;
 using Moq;
 using Ninject;
 using MovieStore.Domain.Abstract;
+using MovieStore.Domain.Concrete;
 using MovieStore.Domain.Entities;
 
 namespace MovieStore.WebUI.Infrastructure
@@ -31,6 +32,7 @@ namespace MovieStore.WebUI.Infrastructure
 
         private void AddBindings()
         {
+            /*
             Mock<IProductRepository> mock = new Mock<IProductRepository>();
             mock.Setup(m => m.Products).Returns(new List<Product> {
                 new Product { Name = "Apocalypse Now", Price = 80 },
@@ -38,6 +40,8 @@ namespace MovieStore.WebUI.Infrastructure
                 new Product { Name = "The Silence of the Lambs", Price = 75 }
             });
             kernel.Bind<IProductRepository>().ToConstant(mock.Object);
+            */
+            kernel.Bind<IProductRepository>().To<EFProductRepository>();
         }
     }
 }

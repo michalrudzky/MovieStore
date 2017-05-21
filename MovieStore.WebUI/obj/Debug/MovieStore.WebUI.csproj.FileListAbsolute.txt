@@ -44,3 +44,7 @@ C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.Web
 C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.WebUI\obj\Debug\MovieStore.WebUI.csprojResolveAssemblyReference.cache
 C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.WebUI\obj\Debug\MovieStore.WebUI.dll
 C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.WebUI\obj\Debug\MovieStore.WebUI.pdb
+C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.WebUI\bin\EntityFramework.dll
+C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.WebUI\bin\EntityFramework.xml
+C:\Users\Michał\Documents\Visual Studio 2015\Projects\MovieStore\MovieStore.WebUI\bin\EntityFramework.SqlServer.xml

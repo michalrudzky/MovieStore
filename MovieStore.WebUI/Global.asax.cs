@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using MovieStore.Domain.Entities;
+using MovieStore.WebUI.Infrastructure.Binders;
 
 namespace MovieStore.WebUI
 {
@@ -13,6 +15,7 @@ namespace MovieStore.WebUI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Configuration;
 using System.Web.Mvc;
 using Moq;
 using Ninject;
@@ -32,16 +32,14 @@ namespace MovieStore.WebUI.Infrastructure
 
         private void AddBindings()
         {
-            /*
-            Mock<IProductRepository> mock = new Mock<IProductRepository>();
-            mock.Setup(m => m.Products).Returns(new List<Product> {
-                new Product { Name = "Apocalypse Now", Price = 80 },
-                new Product { Name = "Fight Club", Price = 70 },
-                new Product { Name = "The Silence of the Lambs", Price = 75 }
-            });
-            kernel.Bind<IProductRepository>().ToConstant(mock.Object);
-            */
             kernel.Bind<IProductRepository>().To<EFProductRepository>();
+
+            EmailSettings emailSettings = new EmailSettings {
+                WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false")
+            };
+
+            kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>()
+                .WithConstructorArgument("settings", emailSettings);
         }
     }
 }

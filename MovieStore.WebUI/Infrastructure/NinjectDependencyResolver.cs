@@ -7,6 +7,8 @@ using Ninject;
 using MovieStore.Domain.Abstract;
 using MovieStore.Domain.Concrete;
 using MovieStore.Domain.Entities;
+using MovieStore.WebUI.Infrastructure.Abstract;
+using MovieStore.WebUI.Infrastructure.Concrete;
 
 namespace MovieStore.WebUI.Infrastructure
 {
@@ -40,6 +42,8 @@ namespace MovieStore.WebUI.Infrastructure
 
             kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>()
                 .WithConstructorArgument("settings", emailSettings);
+
+            kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }

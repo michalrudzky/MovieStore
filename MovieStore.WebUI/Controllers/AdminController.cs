@@ -5,6 +5,7 @@ using MovieStore.Domain.Entities;
 
 namespace MovieStore.WebUI.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         private IProductRepository repository;

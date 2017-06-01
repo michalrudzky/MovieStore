@@ -38,5 +38,18 @@ namespace MovieStore.WebUI.Controllers
             };
             return View(model);
         }
+
+        public FileContentResult GetImage(int productId)
+        {
+            Product prod = repository.Products.FirstOrDefault(p => p.ProductID == productId);
+            if (prod != null)
+            {
+                return File(prod.ImageData, prod.ImageMimeType);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }
